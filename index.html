@@ -253,20 +253,20 @@
       <h4>Kontodaten</h4>
       <ul>
         <li><strong>User-ID:</strong> Eindeutige Identifikationsnummer deines Kontos</li>
-        <li><strong>Benutzername (Username):</strong> Dein gewählter Nutzername</li>
+        <li><strong>Benutzername (Username):</strong> Dein gewählter Nutzername und in normalisierter Form, für Einzigartigkeit</li>
         <li><strong>E-Mail-Adresse:</strong> Deine E-Mail-Adresse sowie der Status, ob diese verifiziert wurde</li>
         <li><strong>Profilbild:</strong> Falls hochgeladen, dein Profilbild</li>
         <li><strong>Registrierungsdatum:</strong> Zeitpunkt der Kontoerstellung</li>
-        <li><strong>Letzter Login:</strong> Zeitpunkt deiner letzten Anmeldung für jedes Gerät</li>
+        <li><strong>Letzter Login:</strong> Zeitpunkt deiner letzten Anmeldung für jedes Gerät, inklusive Platform</li>
         <li><strong>Profil-Status:</strong> Information, ob dein Profil vollständig eingerichtet ist</li>
         <li><strong>Bevorzugte Währung:</strong> Deine gewählte Währungseinstellung</li>
         <li><strong>Geräte-IDs (Device IDs):</strong> Zur Identifikation der verwendeten Geräte</li>
-        <li><strong>FCM-Token:</strong> Für Push-Benachrichtigungen (Firebase Cloud Messaging)</li>
+        <li><strong>FCM-Token:</strong> Jeder Token selber inklusive Erstellungsdatum und letztes Update, Für Push-Benachrichtigungen (Firebase Cloud Messaging)</li>
       </ul>
 
       <h4>Inhalte und Aktivitäten</h4>
       <ul>
-        <li><strong>Posts/Beiträge:</strong> Hochgeladene Produktbilder, Produktbeschreibungen, inklusive angegebenen Preisen und Währung, Anzahl der erhaltenen Kommentare, durchschnittliche Bewertung und Bewertungen mit userId selber sowie Erstellungsdatum</li>
+        <li><strong>Posts/Beiträge:</strong> Hochgeladene Produktbilder, Produktbeschreibungen, Kommentare, angegebene Preise und Währung, Anzahl der erhaltenen Kommentare, durchschnittliche Bewertung und Bewertungen mit userId selber sowie Erstellungsdatum</li>
         <li><strong>Bewertungen:</strong> Abgegebene Ratings (Bewertungen), zugehörige Bewertungstexte, Zeitstempel der Bewertung</li>
         <li><strong>Kommentare:</strong> Geschriebene Kommentare zu Posts sowie Erstellungsdatum und zugehörige Bewertung</li>
         <li><strong>Aktivitätsstatistiken:</strong> Anzahl der erstellten Posts, Anzahl der abgegebenen Bewertungen</li>
@@ -291,7 +291,7 @@
         <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung – Bereitstellung der App-Dienste)
       </p>
       <p>
-        <strong>Speicherdauer:</strong> Diese Daten werden gespeichert, solange dein Konto besteht. 
+        <strong>Speicherdauer:</strong> Diese Daten werden in Firebase Firestore, Cloud Storage und Firebase Authentication gespeichert, solange dein Konto besteht. 
         Bei Löschung deines Kontos über die Funktion "Account löschen" werden alle zugehörigen Daten 
         innerhalb von 30 Tagen dauerhaft gelöscht oder anonymisiert, sofern keine gesetzlichen 
         Aufbewahrungspflichten entgegenstehen.
